@@ -13,3 +13,9 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Every shared link (/v/<slug>) is served by the same quiz page.
+[[redirects]]
+  from = "/v/*"
+  to = "/v/index.html"
+  status = 200
