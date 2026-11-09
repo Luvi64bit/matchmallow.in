@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Make your vibe card · Matchmallow</title>
+<meta name="description" content="Answer 10 quick questions, get your link, and send it to your crush, partner or bestie.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF8FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1B0F2E" media="(prefers-color-scheme: dark)">
+<meta property="og:site_name" content="Matchmallow">
+<meta property="og:title" content="Make your vibe card · Matchmallow">
+<meta property="og:description" content="Answer 10 quick questions, get your link, and send it to your crush, partner or bestie.">
+<meta property="og:image" content="https://matchmallow.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/fredoka-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body data-mode="create">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs><clipPath id="mmClip"><rect x="6" y="10" width="70" height="70" rx="26"/></clipPath></defs>
+  <symbol id="mm" viewBox="0 0 120 90">
+    <rect x="6" y="10" width="70" height="70" rx="26" fill="#FF8AC0"/>
+    <rect x="44" y="10" width="70" height="70" rx="26" fill="#B9A5FF"/>
+    <rect x="44" y="10" width="70" height="70" rx="26" fill="#FFE36E" clip-path="url(#mmClip)"/>
+    <path d="M60 56C47 47 49 36 55.5 36C58 36 59.6 37.6 60 39.5C60.4 37.6 62 36 64.5 36C71 36 73 47 60 56Z" fill="#FF4F9A"/>
+    <g fill="#2A1745"><circle cx="19" cy="42" r="2.8"/><circle cx="31" cy="42" r="2.8"/><circle cx="89" cy="42" r="2.8"/><circle cx="101" cy="42" r="2.8"/></g>
+    <g fill="none" stroke="#2A1745" stroke-width="2.4" stroke-linecap="round"><path d="M20 50Q25 55 30 50"/><path d="M90 50Q95 55 100 50"/></g>
+    <g fill="#FF4F9A" opacity=".5"><ellipse cx="13.5" cy="50" rx="3.4" ry="2.3"/><ellipse cx="36.5" cy="50" rx="3.4" ry="2.3"/><ellipse cx="83.5" cy="50" rx="3.4" ry="2.3"/><ellipse cx="106.5" cy="50" rx="3.4" ry="2.3"/></g>
+  </symbol>
+</svg>
+<header class="site-head">
+  <div class="wrap">
+    <a class="lockup" href="/" aria-label="Matchmallow home"><svg class="mark" aria-hidden="true"><use href="#mm"/></svg><span aria-hidden="true">match<b>mallow</b></span></a>
+    <span class="step-count" id="step-count" aria-hidden="true"></span>
+  </div>
+</header>
+<main class="quiz" id="app">
+  <noscript><p class="lede">The quiz needs JavaScript turned on. Sorry about that.</p></noscript>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span>Nickname only. Your answers stay private.</span>
+    <a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </div>
+</footer>
+<script type="module" src="/quiz.js"></script>
+</body>
+</html>
