@@ -8,3 +8,7 @@
 .bottom{background:var(--plum);color:var(--cream);padding:58px 0;text-align:center}.bottom h2{font-size:clamp(32px,6vw,54px);margin-bottom:10px}.bottom p{margin-bottom:24px}.bottom .btn{background:var(--butter);color:var(--plum)!important}.site-foot{padding:36px 0;border-top:2px solid var(--line)}.site-foot .wrap{display:grid;gap:15px}.foot-nav{display:flex;flex-wrap:wrap;gap:18px}.foot-nav a{font-weight:700;min-height:44px;display:inline-flex;align-items:center}.site-foot p{font-size:14px;color:var(--soft)}
 @media(max-width:760px){.hero{padding:50px 0 58px}.hero .wrap{grid-template-columns:1fr;gap:34px}.sticker{width:175px;border-radius:27px;justify-self:start;margin-left:18px;transform:rotate(5deg)}.sticker svg{width:95px;height:95px}.sticker .caption{font-size:14px;bottom:12px}.sticker .mini{font-size:13px;right:-35px}.content{padding:44px 0 70px}.content-grid{grid-template-columns:1fr;gap:28px}.side{position:static}.side nav{display:flex;overflow-x:auto;gap:8px;padding-bottom:8px}.side nav a{flex:none;border:1.5px solid var(--line);background:var(--surface);font-size:14px}.side .updated{margin-top:8px}.card{padding:24px 20px}.top-nav .desktop{display:none}}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+/* Official homepage logo lockup: mascot mark plus Fredoka wordmark */
+.logo{display:inline-flex;align-items:center;gap:.22em;white-space:nowrap;min-height:44px}
+.logo .brand-mark{display:block;width:1.7em;height:1.275em;object-fit:contain;flex:none}
