@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Make your vibe card | Matchmallow</title>
+<meta name="description" content="Answer ten playful questions to start your Matchmallow vibe card.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:Fredoka;src:url('/fonts/fredoka-600.woff2') format('woff2');font-display:swap}
+@font-face{font-family:Figtree;src:url('/fonts/figtree-var.woff2') format('woff2');font-display:swap}
+:root{font-family:Figtree,system-ui,sans-serif;color-scheme:light dark;--bg:#fff8fb;--ink:#2a1745;--paper:#fff;--soft:#65527e;--edge:#2a1745;--accent:#6c4dff;--focus:#6c4dff}
+@media(prefers-color-scheme:dark){:root{--bg:#1b0f2e;--ink:#fff1f8;--paper:#2a1745;--soft:#cdbbe3;--edge:#ff8ac0;--accent:#b9a5ff;--focus:#b9a5ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);min-height:100svh}a{color:inherit}
+header{max-width:860px;margin:auto;padding:20px 18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font:600 24px Fredoka,system-ui;text-decoration:none}.logo span{color:var(--accent)}
+main{max-width:680px;margin:24px auto 64px;padding:0 18px}h1,h2{font-family:Fredoka,system-ui;line-height:1.12}h1{font-size:clamp(32px,7vw,48px);margin:0 0 12px}h2{font-size:clamp(25px,5vw,34px);margin:12px 0 22px}
+p{line-height:1.55}.muted{color:var(--soft)}.panel{background:var(--paper);border:2.5px solid var(--edge);border-radius:26px;box-shadow:0 6px 0 var(--edge);padding:clamp(20px,5vw,36px)}
+label{font-weight:650}input[type=text]{display:block;width:100%;font:inherit;font-size:18px;margin:10px 0 22px;padding:14px;border:2px solid var(--edge);border-radius:14px;background:var(--bg);color:var(--ink)}
+fieldset{border:0;margin:0;padding:0;min-width:0}legend{font:600 clamp(24px,5vw,34px) Fredoka,system-ui;margin-bottom:22px}
+.choice{display:flex;gap:12px;align-items:center;border:2px solid var(--edge);border-radius:16px;padding:14px;margin-bottom:12px;min-height:56px;cursor:pointer;font-size:17px}
+.choice:has(input:checked){background:#ffe36e;color:#2a1745}.choice input{width:20px;height:20px;accent-color:#6c4dff;flex:none}
+.controls{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{min-height:50px;border:2px solid #2a1745;border-radius:999px;background:#6c4dff;color:#fff;font:600 17px Fredoka,system-ui;padding:12px 24px;cursor:pointer}.btn.secondary{background:#fff;color:#2a1745}.btn:disabled{opacity:.45;cursor:not-allowed}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.progress{height:12px;background:#ead7ee;border-radius:100px;overflow:hidden;margin:16px 0 26px}.progress>div{height:100%;width:0;background:#6c4dff;transition:width .2s}
+.error{color:#c42b54;font-weight:700;min-height:1.5em}.hide{display:none!important}.eyebrow{font-weight:700;color:var(--soft);letter-spacing:.03em}
+@media(max-width:430px){header{padding:18px 16px}.panel{padding:20px}.controls .btn{flex:1;padding:12px 14px}}
+@media(prefers-reduced-motion:reduce){.progress>div{transition:none}}
+</style></head><body>
+<header><a class="logo" href="/" aria-label="Matchmallow home">match<span>mallow</span></a><a href="/">Back home</a></header>
+<main><h1>Make your vibe card</h1><p class="muted">Ten playful questions. Just your nickname—no account needed.</p>
+<div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="progress"><div id="progress-fill"></div></div>
+<section class="panel" id="intro"><h2>First, what should we call you?</h2>
+<label for="nickname">Your nickname</label><input id="nickname" type="text" autocomplete="nickname" maxlength="32" minlength="2" required placeholder="e.g. Marshmallow">
+<label><input id="adult" type="checkbox" required> I confirm I am 18 or older.</label>
+<p class="error" id="intro-error" role="alert"></p><button class="btn" id="begin" type="button">Let's go</button></section>
+<section class="panel hide" id="quiz" aria-labelledby="question-title"><p class="eyebrow" id="step"></p><form id="question-form"><fieldset><legend id="question-title"></legend><div id="options"></div></fieldset><p class="error" id="quiz-error" role="alert"></p>
+<div class="controls"><button class="btn secondary" type="button" id="back">Back</button><button class="btn" type="submit" id="next">Next question</button></div></form></section>
+<section class="panel hide" id="complete"><h2>You're all done! ✨</h2><p id="finish-message"></p><p class="muted">Your answers are currently held only in this browser session. Creating a secure shareable link is coming in the next development phase. No answers have been sent to a server.</p><button class="btn secondary" id="restart" type="button">Start over</button></section>
+</main><script type="module" src="/quiz.js"></script></body></html>
