@@ -194,6 +194,7 @@ svg{display:block}
 .tier h3{margin:14px 0 6px}
 .tier p{font-size:16px;line-height:1.45}
 .swipe{font-size:15px;color:var(--soft);margin-top:4px}
+@media (max-width:879px){.tier-scroll{scrollbar-width:auto}.tier-scroll:focus-visible{outline:3px solid var(--focus);outline-offset:2px}}
 
 /* ---------- Why ---------- */
 .why-grid{display:grid;gap:30px}
@@ -396,7 +397,7 @@ svg{display:block}
     <div class="wrap">
       <h2 id="tiers-title">Six results, no boring percentages</h2>
       <p class="lede">Every score lands in a named tier, so it feels like a personality, not a grade. Even the low ones are kind.</p>
-      <div class="tier-scroll" role="region" aria-label="The six result tiers" tabindex="0">
+      <div class="tier-scroll" id="tier-scroll" role="region" aria-label="The six result tiers" tabindex="0">
         <ul class="tiers">
           <li class="tier t-pink"><span class="rng">90–100%</span><h3>Soulmate sparkle</h3><p>You finish each other’s sentences. And snacks.</p></li>
           <li class="tier t-lilac"><span class="rng">75–89%</span><h3>Certified duo</h3><p>Same energy, different playlists. It works.</p></li>
@@ -406,7 +407,7 @@ svg{display:block}
           <li class="tier t-lilac"><span class="rng">0–29%</span><h3>Better as besties</h3><p>Love you, just not like that.</p></li>
         </ul>
       </div>
-      <p class="swipe" aria-hidden="true">Swipe to see all six &rarr;</p>
+      <p class="swipe">Swipe or use the arrow keys to explore all six result tiers.</p>
     </div>
   </section>
 
