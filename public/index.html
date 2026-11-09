@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Matchmallow: couple compatibility quiz you send as a link</title>
 <meta name="description" content="Make a quick vibe card, send your link, and see how compatible you are. Free, cute, nickname-only compatibility quiz for couples, crushes and friends.">
-<link rel="canonical" href="https://matchmallow.app/">
+<link rel="canonical" href="https://matchmallow.in/">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#FFF8FB" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1B0F2E" media="(prefers-color-scheme: dark)">
@@ -16,17 +16,17 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Matchmallow">
-<meta property="og:url" content="https://matchmallow.app/">
+<meta property="og:url" content="https://matchmallow.in/">
 <meta property="og:title" content="Matchmallow: couple compatibility quiz you send as a link">
 <meta property="og:description" content="Make your vibe card in 2 minutes, send the link to your crush, partner or bestie, and see how well you match.">
-<meta property="og:image" content="https://matchmallow.app/og.png">
+<meta property="og:image" content="https://matchmallow.in/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Matchmallow sticker card: Send a link. See if you vibe. 83% Certified duo.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Matchmallow: couple compatibility quiz you send as a link">
 <meta name="twitter:description" content="Make your vibe card in 2 minutes, send the link to your crush, partner or bestie, and see how well you match.">
-<meta name="twitter:image" content="https://matchmallow.app/og.png">
+<meta name="twitter:image" content="https://matchmallow.in/og.png">
 <meta name="twitter:image:alt" content="Matchmallow sticker card: Send a link. See if you vibe. 83% Certified duo.">
 
 <script type="application/ld+json">
@@ -35,31 +35,31 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://matchmallow.app/#org",
+      "@id": "https://matchmallow.in/#org",
       "name": "Matchmallow",
-      "url": "https://matchmallow.app/",
-      "logo": "https://matchmallow.app/apple-touch-icon.png"
+      "url": "https://matchmallow.in/",
+      "logo": "https://matchmallow.in/apple-touch-icon.png"
     },
     {
       "@type": "WebSite",
-      "@id": "https://matchmallow.app/#website",
+      "@id": "https://matchmallow.in/#website",
       "name": "Matchmallow",
-      "url": "https://matchmallow.app/",
+      "url": "https://matchmallow.in/",
       "inLanguage": "en",
-      "publisher": { "@id": "https://matchmallow.app/#org" }
+      "publisher": { "@id": "https://matchmallow.in/#org" }
     },
     {
       "@type": "WebApplication",
-      "@id": "https://matchmallow.app/#app",
+      "@id": "https://matchmallow.in/#app",
       "name": "Matchmallow",
-      "url": "https://matchmallow.app/",
+      "url": "https://matchmallow.in/",
       "description": "A compatibility quiz you send to your partner, crush or bestie as a link. Make your vibe card, share your link and see how well you match.",
       "applicationCategory": "EntertainmentApplication",
       "operatingSystem": "Any",
       "browserRequirements": "Requires a modern web browser",
       "isAccessibleForFree": true,
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "publisher": { "@id": "https://matchmallow.app/#org" }
+      "publisher": { "@id": "https://matchmallow.in/#org" }
     }
   ]
 }
@@ -194,6 +194,7 @@ svg{display:block}
 .tier h3{margin:14px 0 6px}
 .tier p{font-size:16px;line-height:1.45}
 .swipe{font-size:15px;color:var(--soft);margin-top:4px}
+@media (max-width:879px){.tier-scroll{scrollbar-width:auto}.tier-scroll:focus-visible{outline:3px solid var(--focus);outline-offset:2px}}
 
 /* ---------- Why ---------- */
 .why-grid{display:grid;gap:30px}
@@ -378,7 +379,7 @@ svg{display:block}
           <h3>Get your link</h3>
           <p>Your personal link is ready right away.</p>
           <span class="url-cap">Example link</span>
-          <span class="url">matchmallow.app/v/piper-8x2</span>
+          <span class="url">matchmallow.in/v/piper-8x2</span>
         </li>
         <li class="paper">
           <h3>Send it</h3>
@@ -396,7 +397,7 @@ svg{display:block}
     <div class="wrap">
       <h2 id="tiers-title">Six results, no boring percentages</h2>
       <p class="lede">Every score lands in a named tier, so it feels like a personality, not a grade. Even the low ones are kind.</p>
-      <div class="tier-scroll" role="region" aria-label="The six result tiers" tabindex="0">
+      <div class="tier-scroll" id="tier-scroll" role="region" aria-label="The six result tiers" tabindex="0">
         <ul class="tiers">
           <li class="tier t-pink"><span class="rng">90–100%</span><h3>Soulmate sparkle</h3><p>You finish each other’s sentences. And snacks.</p></li>
           <li class="tier t-lilac"><span class="rng">75–89%</span><h3>Certified duo</h3><p>Same energy, different playlists. It works.</p></li>
@@ -406,7 +407,7 @@ svg{display:block}
           <li class="tier t-lilac"><span class="rng">0–29%</span><h3>Better as besties</h3><p>Love you, just not like that.</p></li>
         </ul>
       </div>
-      <p class="swipe" aria-hidden="true">Swipe to see all six &rarr;</p>
+      <p class="swipe">Swipe or use the arrow keys to explore all six result tiers.</p>
     </div>
   </section>
 
