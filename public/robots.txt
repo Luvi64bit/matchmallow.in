@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matchmallow.app/sitemap.xml
+Sitemap: https://matchmallow.in/sitemap.xml
